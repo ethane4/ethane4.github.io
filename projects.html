@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - Ethan Eschbach</title>
+<style>
+  body {
+    background-color: #fffefa;
+    color: #222;
+    font-family: Garamond, 'Apple Garamond', 'EB Garamond', 'Times New Roman', serif;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.2em;
+  }
+  nav {
+    background-color: #057b60;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 8px 30px;
+  }
+  nav a {
+    color: #bcbcbc; /* Grey for default state */
+    text-decoration: none;
+    font-family: Garamond, 'Apple Garamond', 'EB Garamond', 'Times New Roman', serif;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+  }
+  nav a:hover {
+    color: #dddddd; /* Light grey on hover */
+    text-decoration: none;
+  }
+  nav a.active {
+    color: #fff; /* White for current page */
+  }
+  main {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 2.6em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+  }
+  p {
+    margin-bottom: 1.2em;
+  }
+  h2.section-header {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+  }
+  .pub-entry {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 1.1em;
+  }
+  .pub-date {
+    flex: 0 0 100px;
+    color: #555;
+  }
+  .pub-text a {
+    color: #057b60;
+    text-decoration: underline;
+  }
+  .pub-text a:hover {
+    color: #044e3e;
+  }
+  @media (max-width: 600px) {
+    .pub-entry {
+      flex-direction: column;
+      gap: 4px;
+    }
+    .pub-date {
+      flex: none;
+    }
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">home</a>
+    <a href="projects.html" class="active">projects</a>
+    <a href="contact.html">contact</a>
+  </nav>
+  <main>
+
+  <h2 class="section-header">Publications:</h2>
+
+  <div class="pub-entry">
+    <div class="pub-date">March 2026</div>
+    <div class="pub-text">
+      <strong>evedesign: accessible biosequence design with a unified framework</strong>.<br>
+      Thomas A. Hopf, Artem Gazizov, Sergio Garcia Busto, <strong>Ethan Eschbach</strong>, SunJae Lee, Milot Mirdita, Rose Orenbuch, Khaoula Belahsen, David Ross, Chris Sander, Martin Steinegger, Simon d&rsquo;Oelsnitz, Debora S. Marks.
+      (in review) <a href="https://www.biorxiv.org/content/10.64898/2026.03.17.712115v1">link</a>
+    </div>
+  </div>
+
+  <div class="pub-entry">
+    <div class="pub-date">April 2026</div>
+    <div class="pub-text">
+      <strong>Predicting Amyloid Fibrillation from Protein Language Model Embeddings</strong>.<br>
+      <strong>Ethan Eschbach</strong>, Kristine Deibler, Deepa Korani, Sebastian Swanson. Journal of Chemical Information and Modeling.
+      <a href="https://pubs.acs.org/jcisd8/article/66/9/5206/5146269/Predicting-Peptide-Aggregation-with-Protein">link</a>
+    </div>
+  </div>
+  </main>
+</body>
+</html>

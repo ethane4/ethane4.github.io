@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ethan Eschbach</title>
+<style>
+  body {
+    background-color: #fffefa;
+    color: #222;
+    font-family: Garamond, 'Apple Garamond', 'EB Garamond', 'Times New Roman', serif;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.2em;
+  }
+  nav {
+    background-color: #057b60;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 8px 30px;
+  }
+  nav a {
+    color: #bcbcbc; /* Grey for default state */
+    text-decoration: none;
+    font-family: Garamond, 'Apple Garamond', 'EB Garamond', 'Times New Roman', serif;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+  }
+  nav a:hover {
+    color: #dddddd; /* Light grey on hover */
+    text-decoration: none;
+  }
+  nav a.active {
+    color: #fff; /* White for current page */
+  }
+  main {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 2.6em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+  }
+  p {
+    margin-bottom: 1.2em;
+  }
+  .custom-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #136f5a; /* Dark blue */
+  }
+  .custom-link:hover {
+    color: #09a984; /* Darker color on hover (or `#0d1b2a` for a deeper blue) */
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="active">home</a>
+    <a href="projects.html">projects</a>
+    <a href="contact.html">contact</a>
+  </nav>
+  <main>
+  <h1>Ethan Eschbach</h1>
+  <p>
+    I am a research associate in the <a href="https://www.deboramarkslab.com/" class="custom-link">Debbie Marks Lab</a> at Harvard Medical School.
+    My current research spans variant effect prediction, enzyme design, 
+    and the development of machine learning methods for protein engineering.
+
+  </p>
+  <p>
+    I have a Bachelor of Science in Chemical Engineering from the University of
+    Washington. I previously spent time in the <a href="https://kinglab.ipd.uw.edu/" class="custom-link">King Lab</a> at the Institute for Protein 
+    Design, where I developed computational methods for the design of icosahedral 
+    protein nanoparticles.  
+  </p>
+  </main>
+</body>
+</html>

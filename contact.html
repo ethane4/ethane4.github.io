@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Ethan Eschbach</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  body {
+    background-color: #fffefa;
+    color: #222;
+    font-family: Garamond, 'Apple Garamond', 'EB Garamond', 'Times New Roman', serif;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.2em;
+  }
+  nav {
+    background-color: #057b60;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 8px 30px;
+  }
+  nav a {
+    color: #bcbcbc; /* Grey for default state */
+    text-decoration: none;
+    font-family: Garamond, 'Apple Garamond', 'EB Garamond', 'Times New Roman', serif;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+  }
+  nav a:hover {
+    color: #dddddd; /* Light grey on hover */
+    text-decoration: none;
+  }
+  nav a.active {
+    color: #fff; /* White for current page */
+  }
+  main {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+  }
+  .headshot-col {
+    flex: 0 0 auto;
+  }
+  .headshot-col img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+  }
+  .contact-col h1 {
+    font-size: 2.6em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+  }
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .contact-list li {
+    margin-bottom: 0.8em;
+  }
+  .contact-list a {
+    color: #222;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .contact-list a:hover {
+    color: #057b60;
+    text-decoration: underline;
+  }
+  .contact-list .icon {
+    font-size: 1.4em;
+    width: 1.4em;
+    text-align: center;
+    color: #888;
+  }
+  .contact-list a:hover .icon {
+    color: #057b60;
+  }
+  @media (max-width: 700px) {
+    main {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">home</a>
+    <a href="projects.html">projects</a>
+    <a href="contact.html" class="active">contact</a>
+  </nav>
+  <main>
+    <div class="headshot-col">
+      <img src="Headshot.png" alt="Ethan Eschbach">
+    </div>
+    <div class="contact-col">
+      <h1>Contact</h1>
+      <ul class="contact-list">
+        <li><a href="mailto:ethan_eschbach@g.harvard.edu"><i class="icon fa-solid fa-envelope"></i> ethan_eschbach@g.harvard.edu</a></li>
+        <li><a href="https://github.com/ethane4"><i class="icon fa-brands fa-github"></i> GitHub</a></li>
+        <li><a href="https://linkedin.com/in/ethane4"><i class="icon fa-brands fa-linkedin"></i> LinkedIn</a></li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
