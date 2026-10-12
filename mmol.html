@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mMol - Ethan Eschbach</title>
+<meta name="description" content="mMol: a native macOS molecular viewer with the look and feel of desktop PyMOL.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+  body {
+    background-color: #fffefa;
+    color: #222;
+    font-family: Garamond, 'Apple Garamond', 'EB Garamond', 'Times New Roman', serif;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.2em;
+  }
+  nav {
+    background-color: #057b60;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 8px 30px;
+  }
+  nav a {
+    color: #bcbcbc;
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+  }
+  nav a:hover {
+    color: #dddddd;
+  }
+  nav a.active {
+    color: #fff;
+  }
+  main {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 0 20px;
+  }
+  main a {
+    color: #057b60;
+  }
+  main a:hover {
+    color: #044e3e;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .title img {
+    width: 96px;
+    height: 96px;
+  }
+  h1 {
+    font-size: 2.6em;
+    margin: 0;
+  }
+  h2.section-header {
+    font-size: 1.3em;
+    text-decoration: underline;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+  }
+  .download {
+    display: inline-block;
+    background-color: #057b60;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 0.4em;
+  }
+  main a.download:hover {
+    background-color: #044e3e;
+    color: #fff;
+  }
+  .note {
+    color: #555;
+    font-size: 0.85em;
+  }
+  .screenshot {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 1.4em 0 0.4em;
+  }
+  ul, ol {
+    padding-left: 1.3em;
+  }
+  li {
+    margin-bottom: 0.4em;
+  }
+  code {
+    font-size: 0.85em;
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="/">home</a>
+    <a href="/projects" class="active">projects</a>
+    <a href="/contact">contact</a>
+  </nav>
+  <main>
+
+  <div class="title">
+    <img src="/images/mmol-icon.png" alt="mMol icon">
+    <h1>mMol</h1>
+  </div>
+
+  <p>
+    mMol is a macOS molecular viewer styled after PyMOL 2.5. 
+    It runs the on the PyMOL engine, draws with Metal, and its GPU ray tracer 
+    gives the same images as PyMOL's CPU ray tracer.
+  </p>
+
+  <a class="download" href="https://github.com/ethane4/mMol/releases/download/v1.0.0/mMol-1.0.0.dmg">Download mMol for macOS</a>
+  <p class="note">Version 1.0.0 &middot; macOS 14 or newer on Apple silicon &middot; free</p>
+
+  <img class="screenshot" src="/images/mmol-screenshot.jpg" alt="mMol showing hemoglobin (4HHB) as a cartoon colored by chain">
+
+  <h2 class="section-header">Features:</h2>
+  <ul>
+    <li><strong>Claude integration:</strong> Type <code>claude</code> to open
+      a Claude Code session that can inspect and change the session</li>
+    <li><strong>Metal rendering:</strong> The live view, picking, and
+      <code>ray</code> all run on the GPU</li>
+    <li><strong>PyMOL commands and scripts:</strong> Every PyMOL command works
+      at the prompt, as do <code>.pml</code> + <code>.py</code> scripts and
+      <code>~/.pymolrc</code></li>
+    <li><strong>Analysis tools:</strong> Contact maps, Ramachandran plots,
+      alignments (with RMSD), mutagenesis tool, and a movie builder</li>
+    <li><strong>Trajectories and maps:</strong> DCD, XTC, TRR, GRO, and CCP4, MRC and DX maps</li>
+  </ul>
+
+  <h2 class="section-header">Source and credits:</h2>
+  <p>
+    The source code is on <a href="https://github.com/ethane4/mMol" target="_blank" rel="noopener noreferrer">GitHub</a>.
+    mMol builds on <a href="https://github.com/javierbq/RayMol" target="_blank" rel="noopener noreferrer">RayMol</a>
+    by Javier Castellanos, a Metal port of the open-source PyMOL from
+    Schr&ouml;dinger, LLC, and is distributed under PyMOL's license.
+    PyMOL is a trademark of Schr&ouml;dinger, LLC; mMol isn't affiliated with
+    or endorsed by Schr&ouml;dinger.
+  </p>
+
+  </main>
+</body>
+</html>
